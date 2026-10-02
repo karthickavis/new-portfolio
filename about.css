@@ -1,0 +1,202 @@
+.about-main {
+    width: 80%;
+    max-width: 100%;
+    min-height: 80vh;
+
+    margin: 100px auto 0;
+
+    display: grid;
+    /* grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); */
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid white; */
+
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+}
+.about-content{
+    /* border: 2px solid white; */
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    animation: aboutcontent 1s forwards;
+}
+@keyframes aboutcontent {
+    from{
+    transform: translateX(-50px) scale(0.8);
+    }
+    to{
+ transform: translateX(0px) scale(1);
+    }
+}
+.about-para h3{
+    padding: auto 10px;
+}
+.about-para p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+.tabs{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+}
+.skill-para{
+    padding: 5px;
+    margin-top: 40px;
+    /* border: 2px solid red; */
+}
+
+.tabs button{
+    padding: 5px 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 20px;
+    font-weight: bold;
+    border: none;
+}
+.tabs button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.skills-container{
+    
+    padding: 5px;
+    background: #454545;
+    border-radius: 10px;
+}
+.skill{
+    width: 100%;
+    margin-top: 10px;
+}
+.skill-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.skill span{
+    font-size: 15px;
+}
+.progress-bar{
+    width: 90%;
+    /* border: 2px solid red; */
+    height: 3px;
+    background:gray;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+}
+.progress-html{
+    width: 90%;
+    background-color: white;
+    height: 100%;
+}
+.progress-css{
+    width: 80%;
+    background-color: white;
+    height: 100%;
+}
+.progress-js{
+    width: 85%;
+    background-color: white;
+    height: 100%;
+}
+.progress-react{
+    width: 75%;
+    background-color: white;
+    height: 100%;
+}
+.progress-bootstrap{
+    width: 80%;
+    background: white;
+    height: 100%;
+}
+.about-img{
+  margin: 0 auto;
+  animation: aboutimg 1s forwards;
+}
+@keyframes aboutimg {
+
+     from{
+    transform: translateY(-100px) scale(0.8);
+    }
+    to{
+ transform: translateX(0px) scale(1);
+    }
+}
+
+.about-img .karthick-img{
+    border: 5px solid purple;
+
+}
+.socialmedia-icons{
+    display: flex;
+    flex-direction: column;
+}
+.about-typing{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
+}
+.text-transform{
+   
+     color: purple;
+    display: inline-block;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid purple;
+    font-weight: bold;
+    font-size: 18px;
+    animation: abouttyping 3s steps(24) infinite alternate;
+    
+
+}
+@keyframes abouttyping{
+    from{
+width: 0ch;
+    }to{
+        width: 24ch;
+    }
+}
+
+
+@media screen and (max-width:1174px){
+    .about-main{
+        width: 100%;
+    }
+}
+@media screen and (max-width:923px){
+    .about-main{
+        grid-template-columns: 1fr;
+    }
+    .about-content{
+        order: 2;
+    }
+    
+    .center-img{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:698px){
+    .about-content{
+        flex-wrap: wrap;
+    }
+    .about-subcontent{
+        order: 1;
+    }
+    .socialmedia-icons{
+        order: 2;
+        /* border: 2px solid green; */
+        width: 100%;
+        flex-direction: row!important;
+    }
+}
+@media screen and (max-width:414px){
+    .about-para h3{
+        font-size: 18px;
+    }
+    .tabs button{
+        margin-left: 2px;
+        padding: 2px 4px;
+    }
+}
